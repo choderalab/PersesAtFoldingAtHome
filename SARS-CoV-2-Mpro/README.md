@@ -10,7 +10,7 @@ Docking:
 * `run-lsf-aggregate.sh` - aggregate docking results
 * `aminopyridines_for_chodera_lab-docked.csv` - docked compound scores and data from original CSV
 * `aminopyridines_for_chodera_lab-docked.sdf` - docked compound geometries in appropriate protonation states
-* `aminopyridines_for_chodera_lab-docked.pdb` - PDB file of SDF 
+* `aminopyridines_for_chodera_lab-docked.pdb` - PDB file of SDF
 * `aminopyridines_for_chodera_lab-docked/` - docked compounds prior to aggregation
 * `aminopyridines_for_chodera_lab-docked-justscore.csv` - just the scores
 
@@ -21,3 +21,6 @@ Setup:
 * `submit-ligpairs.sh` - LSF batch queue script to launch automated setup
 * `run.py` - script executed by batch queue script
 * `receptors/` - source structures from https://github.com/FoldingAtHome/covid-moonshot/tree/master/receptors
+
+Analysis:
+* `consolidate-work-to-pandas.py` : script that scrapes PROJ directories on FAH server to create pandas dataframe of protocol work for analysis of binding free eneriges
