@@ -105,3 +105,6 @@ We'd also like to archive the `positions.xtc` onto S3 so we can retrieve all the
 The work values can go into an entry in a table, and then used to compute a free energy estimate for that transformation.
 
 Hannah then uses a [maximum likelihood estimator](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.9b00528) to compute the free energy of that particular ligand (in another table) using the known experimental measured free energies of given ligands and the relative estimated binding free energies among ligands from the transformations table
+
+We also want to extract a snapshot of the ligand B complex form `positions.xtc` (the last snapshot) from each of the result WUs so we can present the chemists with a visual picture of what the protein:ligand interactions might look like.
+There's a way to extract a PDB file (a text file) from the last snapshot with a script (using [MDTraj](http://mdtraj.org)) or a command-line tool. These PDB files could be stored as single file objects on S3 and retrieved via a URL when needed.
